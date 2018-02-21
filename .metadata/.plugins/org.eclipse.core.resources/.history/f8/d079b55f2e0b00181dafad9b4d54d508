@@ -1,0 +1,7 @@
+package oop;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		// 레고를 쌓을 공간 생성.
+	}
+}

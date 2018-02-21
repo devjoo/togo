@@ -1,0 +1,15 @@
+package fileIO;
+
+import java.io.FileReader;
+
+public class InputTest {
+
+	//사용자 정보를 불러오기
+	//불러온 정보를 화면에 출력
+	private void testInput() {
+		
+		fileReader fr = null;
+		fr = new FileReader("C:\\Users\\Administrator\\leejiwoo\\@temp\\")
+
+	}
+}

@@ -1,0 +1,10 @@
+package opt;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		
+		System.out.println("숫자를 입력하세요. ");
+		int[] arr = new int[];
+		
+	}
+}

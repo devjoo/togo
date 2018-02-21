@@ -1,0 +1,9 @@
+package oop.data;
+
+public class Dog {
+	String name;
+	
+	public void bark() {
+		System.out.println("개가 짖습니다.");
+	} 
+}

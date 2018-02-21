@@ -1,0 +1,8 @@
+package oop.data;
+
+import oop.itf.Hunter;
+import oop.itf.Pet;
+
+public class Cat extends Animal implements Hunter, Pet{
+
+}

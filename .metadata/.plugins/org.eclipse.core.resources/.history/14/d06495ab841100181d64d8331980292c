@@ -1,0 +1,12 @@
+package oop;
+
+public class User {
+	
+	public String name;
+	
+	@Override
+	public boolean equals(Object obj) {
+		boolean result = false;
+	}
+	
+}

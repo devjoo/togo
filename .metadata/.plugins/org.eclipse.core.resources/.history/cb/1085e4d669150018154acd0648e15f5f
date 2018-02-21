@@ -1,0 +1,23 @@
+package oop.components;
+
+public class Button {
+
+	private String text;
+
+	private ClickEvent ce;
+	
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	//클릭 이벤트 => 클릭하면 실행되는 기능
+	public void performClick() {
+		//Q1. 로그인 버튼이 눌리면? => 메인 화면 이동
+		
+		//Q2. 검색 버튼이 눌리면? => 검색 결과 이동
+	}
+}

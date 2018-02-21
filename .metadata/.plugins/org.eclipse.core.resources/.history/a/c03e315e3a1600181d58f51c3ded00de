@@ -1,0 +1,16 @@
+package fileIO;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class MainDrive {
+
+	public static void main(String[] args) {
+		
+		String inputStr = "저장될 글 입니다.";
+		FileWriter fw = null;
+		BufferedWriter bf = null;
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+package exp;
+
+/* 회원가입시 닉네임을 다루는 클래스
+ * 제약조건 : fool이란 단어가 들어가면 안됨
+ */
+
+public class Test {
+	public void PrintNickname(String inputNick) {
+		if(inputNick.contains("fool")) {
+			System.out.println("그런 닉네임 사용불가!");
+		}else {
+			System.out.println("사용가능");
+		}
+
+	}
+}

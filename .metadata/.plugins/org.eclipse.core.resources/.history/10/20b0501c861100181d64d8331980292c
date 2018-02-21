@@ -1,0 +1,25 @@
+package oop;
+
+public class User {
+	
+	public String name;
+	
+	*@Override
+	public boolean equals(Object obj) {
+		boolean result = false;
+		
+		//같은지 아닌지 물어보는 기준을 Object 가 물려준게 아니라 
+		//이름이 같은지 아닌지 뜯어고침 => 오버라이딩
+		
+		User otherUser = (User) obj;
+		
+		if(this.name.equals(otherUser.name)) {
+			result = true;
+		}else {
+			result = false;
+		}
+		
+		return result;
+	}
+	
+}

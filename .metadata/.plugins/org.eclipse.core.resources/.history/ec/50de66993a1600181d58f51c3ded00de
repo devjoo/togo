@@ -1,0 +1,28 @@
+package fileIO;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class MainDrive {
+
+	public static void main(String[] args) {
+		
+		String inputStr = "저장될 글 입니다.";
+		
+		//try문 안에 넣기 편하게 하려고 변수 생성 단은 null로 처리
+		FileWriter fw = null;
+		BufferedWriter bf = null;
+		
+		try {
+			//저장될 파일의 이름은 outputFile.txt로 저장
+			//예외 발생? => 만약 파일을 저장하다가 끊긴다던지
+			fw = new FileWriter("outputFile.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

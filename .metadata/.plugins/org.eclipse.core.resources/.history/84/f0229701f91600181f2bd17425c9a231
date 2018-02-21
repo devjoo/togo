@@ -1,0 +1,96 @@
+package oop;
+
+import java.util.Scanner;
+
+import oop.data.User;
+
+public class MainDrive {
+
+	public static void main(String[] args) {
+		
+		User[] phoneBookUsers = new User[10]; //사용자 목록을 저장할 사용자 배열 10칸 까지 지원
+		
+		//=== 메뉴 입력===
+		
+		int inputMenuNum = -1; //아무것도 입력되지 않은 상태
+		Scanner scan = new Scanner(System.in);
+		
+		//특정 상황 (0이 입력)이 될때까지 무한정 반복
+		//무한 반복을 일단 걸고, 0이 입력되면 탈출
+		//=> while 반복문 탈출 => break;
+		while(true) {
+			//Q1. 메뉴를 출력하고, 선택지를 입력받아 잘못된 입력일 경우에 대한 대처.
+			//	  => 다시 메뉴를 출력, 재입력 (다시 => 반복 입력)
+			
+			//Q2.  0 번을 누르면 프로그램을 종료.
+			System.out.println("메뉴 선택");
+			System.out.println("1. 전화번호 추가");
+			System.out.println("2. 전체 조회");
+			System.out.println("0. 프로그램 종료");
+			System.out.println("--------------------");
+			System.out.println("번호 입력 : ");
+			
+			//메뉴 출력을 마친 후에 정수 입력
+			inputMenuNum = scan.nextInt();
+			
+			//Q3. 전화번호를 추가하려면 고유번호는 자동으로 계산 1,2,3,4,...1씩 자동증가
+			// => 입력 받을 필요 X
+			// 그 외의 이름, 전화번호, 메모는 입력
+			if(inputMenuNum == 1) {
+				System.out.println("<새 사용자 추가>");
+				scan.nextLine(); //다음 입력 받을 준비
+				
+				System.out.println("이름 : ");
+				String inputName = scan.nextLine(); // 문장 입력
+				
+				System.out.println("전화번호 : ");
+				String inputPhone = scan.nextLine();
+				
+				System.out.println("메모 : ");
+				String inputMemo = scan.nextLine();
+				
+				User tempUser = new User();
+				tempUser.setName(inputName);
+				tempUser.setPhoneNum(inputPhone);
+				tempUser.setMemo(inputMemo);
+				// 고유번호   => 저장된 친구가 2명  : 3번
+				//        => 아무도 없다면        : 1번
+				
+				// 배열을 반복 => 내용물 추출
+				for(int i = 0; i < phoneBookUsers.length; i++) {
+					User currentUser = phoneBookUsers[i];
+					
+					//만약 뽑아낸 사용자 변수가 null이라면 => tempUser가 이번 칸에 들어가야함
+					
+					//자동으로 고유 넘버를 찾아내는 로직
+					if(currentUser == null) {
+						tempUser.setId(i+1);
+						phoneBookUsers[i] = tempUser; // 데이터 세팅이 완료된 사용자를 배열에 저장
+						break;
+					}
+					
+					System.out.println("이름 : " + currentUser.getName());
+				}
+				
+				
+				//입력되었음을 알림
+				System.out.println("전화번호를 저장했습니다.");
+			}
+			else if (inputMenuNum == 2){
+				
+			}
+			else if (inputMenuNum == 0){
+				System.out.println("프로그램을 정지합니다.");
+				break;
+			}
+			else {
+				System.out.println("잘못된 입력입니다.");
+				// 1,2,0 모두가 아닌 경우 => 잘못된 입력
+			}
+		}
+		
+		
+		
+	}
+	
+}

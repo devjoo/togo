@@ -1,0 +1,7 @@
+package oop.data;
+
+import oop.itf.Hunter;
+
+public class Lion extends Animal implements Hunter{
+	
+}

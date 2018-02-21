@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="bookstore.People"/>
+<fullyQualifiedTypeName name="bookstore.Book"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="opt.Dog"/>
+<fullyQualifiedTypeName name="opt.Animal"/>
+<fullyQualifiedTypeName name="opt.Monkey"/>
+<fullyQualifiedTypeName name="java.lang.LinkageError"/>
+<fullyQualifiedTypeName name="opt.LivingThings"/>
+<fullyQualifiedTypeName name="opt.Flower"/>
+<fullyQualifiedTypeName name="opt.Tree"/>
+<fullyQualifiedTypeName name="opt.Lion"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="oop.User"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="oop.components.Button"/>
+<fullyQualifiedTypeName name="oop.components.LoginActivity"/>
+<fullyQualifiedTypeName name="javax.activation.MailcapCommandMap"/>
+<fullyQualifiedTypeName name="oop.components.ClickEvent"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="exp.FoolException"/>
+<fullyQualifiedTypeName name="exp.Test"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="fileIO.OutputTest"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+</qualifiedTypeNameHistroy>

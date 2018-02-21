@@ -1,0 +1,12 @@
+package oop;
+
+public class User {
+	
+	private String name;
+	private boolean gender;
+	
+	// 생년월일 ? int 881020 => 00년 이후의 출생 취급 불가.
+	// int ==> 001020 => 1020 String?
+	
+	// 날짜와 시간 => Date, Calendar(☆)
+}

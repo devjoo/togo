@@ -1,0 +1,12 @@
+package oop.data;
+
+public class Dog extends Animal {
+
+	public Dog(String inputName) {
+		super(inputName);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

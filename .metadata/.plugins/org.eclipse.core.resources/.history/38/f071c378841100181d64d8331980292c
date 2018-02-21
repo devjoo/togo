@@ -1,0 +1,8 @@
+package oop;
+
+public class User {
+	
+	public String name;
+	
+	
+}

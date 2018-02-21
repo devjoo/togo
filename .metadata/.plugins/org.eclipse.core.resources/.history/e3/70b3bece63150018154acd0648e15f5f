@@ -1,0 +1,7 @@
+package oop.itf;
+
+public interface Pet {
+	
+	public abstract void befriend();
+	
+}

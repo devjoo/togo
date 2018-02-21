@@ -1,0 +1,39 @@
+package oop.components;
+
+public class Button {
+
+	private String text;
+
+	//클릭 이벤트 인터페이스 변수로 저장
+	private ClickEvent ce;
+	
+	public ClickEvent getCe() {
+		return ce;
+	}
+
+	public void setCe(ClickEvent ce) {
+		this.ce = ce;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	//클릭 이벤트 => 클릭하면 실행되는 기능
+	public void performClick() {
+		//Q1. 로그인 버튼이 눌리면? => 메인 화면 이동
+		
+		//Q2. 검색 버튼이 눌리면? => 검색 결과 이동
+		
+		// 이 버튼이 눌렸다는 것만 전달
+		ce.doSomthing(this);
+	}
+	
+	public void showBtnInfo() {
+		System.out.println("버튼 정보 출력");
+	}
+}

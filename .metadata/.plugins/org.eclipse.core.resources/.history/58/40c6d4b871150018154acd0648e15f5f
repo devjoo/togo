@@ -1,0 +1,46 @@
+package oop.components;
+
+/* 로그인 기능 화면 묘사 
+ * Activity : 안드로이드 앱의 화면 을 액티비티라고 부름
+ * */
+
+
+//로그인 화면은 버튼이 클릭되면 대응하는 역할을 부여.
+public class LoginActivity implements ClickEvent {
+
+	public Button loginBtn;
+	public Button searchBtn;
+	
+	public Button newBtn;
+	public Button emailBtn;
+	
+	//화면 구성 초기화 기능 -> loginBtn searchBtn 객체화
+	public void initActivity() {
+		loginBtn = new Button();
+		searchBtn = new Button();
+		
+		//로그인 버튼, 서치 버튼의 표시문구 설정
+		loginBtn.setText("로그인");
+		searchBtn.setText("검색");
+		
+		//로그인 버튼이 눌리면 내가 처리해줄게 명시
+		loginBtn.setCe(this);
+		//검색 버튼이 눌려도 내가 처리한다. 명시
+		searchBtn.setCe(this);
+		
+		//Q1. 로그인 버튼의 정보를 출력. 
+		loginBtn.showBtnInfo();
+	}
+	
+	@Override
+	public void doSomthing(Button b) {
+		
+		if(b.getText().equals("로그인")) {
+			System.out.println("로그인 화면으로 이동함!");
+		}else if(b.getText().equals("검색")) {
+			System.out.println("검색 화면으로 이동함!");
+		}
+		
+	}
+	
+}

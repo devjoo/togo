@@ -1,0 +1,14 @@
+package oop.data;
+
+/* 제작 목적
+ * 1. 사용자에 관련된 정보를 더 쉽게 다루는 클래스
+ */
+
+public class User {
+
+	//사용자의 속성
+	int id = 0; //사용자의 고유 번호.
+	String name = null; //이름이 저장될 공간
+	String phoneNum = null; //폰번 저장 공간
+	
+}

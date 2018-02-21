@@ -1,0 +1,19 @@
+package oop.data;
+
+import oop.itf.Hunter;
+
+public class Lion extends Animal implements Hunter{
+
+	@Override
+	public void hunt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eatMeat() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

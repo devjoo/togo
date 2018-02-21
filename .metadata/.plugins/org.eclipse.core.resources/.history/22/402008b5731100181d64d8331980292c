@@ -1,0 +1,20 @@
+package oop;
+
+import java.util.Calendar;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		
+		//사용자 한명 생성
+		User u1 = new User();
+		
+		u1.setName("A 사용자");
+		u1.setGender(true); // 남성
+		
+		// 생년월일 세팅 => Calendar 타입
+		
+		// Calendar 변수 생성 : new를 사용하지 않음.
+		Calendar u1BirthDay = Calendar.getInstance()
+		
+	}
+}

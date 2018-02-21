@@ -1,0 +1,13 @@
+package oop;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		
+		Dog d1 = new Dog();
+//		Elephant e1 = new Elephant();
+		
+		d1.bark();
+		e1.bark();
+		
+	}
+}

@@ -1,0 +1,21 @@
+package opt;
+
+import java.util.Scanner;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		
+		System.out.println("숫자를 입력하세요. ");
+		Scanner scan = new Scanner(System.in);
+		int[] arr = new int[];
+		
+		int i = 0;
+		int sum = 0; 
+		while(true) {
+			arr[i] = scan.nextInt();
+			sum += arr[i];
+			i++;
+		}
+		
+	}
+}

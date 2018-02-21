@@ -1,0 +1,60 @@
+package oop;
+
+import java.util.Scanner;
+
+import oop.data.User;
+
+public class MainDrive {
+	
+	User[] phoneBookUsers = new User[10]; //사용자 목록을 저장할 사용자 배열 10칸 까지 지원
+
+	public static void main(String[] args) {
+		
+		//=== 메뉴 입력===
+		
+		int inputMenuNum = -1; //아무것도 입력되지 않은 상태
+		Scanner scan = new Scanner(System.in);
+		
+		//특정 상황 (0이 입력)이 될때까지 무한정 반복
+		//무한 반복을 일단 걸고, 0이 입력되면 탈출
+		//=> while 반복문 탈출 => break;
+		while(true) {
+			//Q1. 메뉴를 출력하고, 선택지를 입력받아 잘못된 입력일 경우에 대한 대처.
+			//	  => 다시 메뉴를 출력, 재입력 (다시 => 반복 입력)
+			
+			//Q2.  0 번을 누르면 프로그램을 종료.
+			System.out.println("메뉴 선택");
+			System.out.println("1. 전화번호 추가");
+			System.out.println("2. 전체 조회");
+			System.out.println("0. 프로그램 종료");
+			System.out.println("--------------------");
+			System.out.println("번호 입력 : ");
+			
+			//메뉴 출력을 마친 후에 정수 입력
+			inputMenuNum = scan.nextInt();
+			
+			//Q3. 전화번호를 추가하려면 고유번호는 자동으로 계산 1,2,3,4,...1씩 자동증가
+			// => 입력 받을 필요 X
+			// 그 외의 이름, 전화번호, 메모는 입력
+			if(inputMenuNum == 1) {
+				System.out.println("<새 사용자 추가>");
+				System.out.println("이름 : ");
+			}
+			else if (inputMenuNum == 2){
+				
+			}
+			else if (inputMenuNum == 0){
+				System.out.println("프로그램을 정지합니다.");
+				break;
+			}
+			else {
+				System.out.println("잘못된 입력입니다.");
+				// 1,2,0 모두가 아닌 경우 => 잘못된 입력
+			}
+		}
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package oop;
+
+import oop.data.Lion;
+
+public class MainDrive {
+	public static void main(String[] args) {
+		
+//		Dog d1 = new Dog();
+//		Elephant e1 = new Elephant();
+		Lion l1 = new Lion();
+
+		
+//		d1.bark();
+//		e1.bark();
+		
+	}
+}

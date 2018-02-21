@@ -1,0 +1,13 @@
+package oop;
+
+public class User {
+	
+	public String name;
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		//return super.equals(obj);
+	}
+	
+}

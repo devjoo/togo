@@ -1,0 +1,9 @@
+package oop.data;
+
+public class Dog {
+	String name;
+	
+	public void bark() {
+		
+	} 
+}
